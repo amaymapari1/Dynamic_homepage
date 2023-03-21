@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 30px;
+}
+@media (max-width: 720px) {
+  .row:after {
+    margin-bottom: 220px;
+  }
+}
+.column h2 {
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}
